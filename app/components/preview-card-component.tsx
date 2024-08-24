@@ -25,8 +25,6 @@ const PreviewCardComponent: FC<PreviewCardComponentProps> = (
         className
     }
 ) => {
-    const bg_color = `bg-[#${bgColor}]`
-    console.log('bg_color:', bg_color)
 
     return (
         <div className={`flex flex-col items-start gap-5 space-y-4 w-[20rem] h-[500px] shrink-0 px-[2.97rem] py-12 ${className}  ${bgColor}`}>
