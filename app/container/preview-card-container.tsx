@@ -1,6 +1,10 @@
+'use client'
+
 import React from 'react'
 import { CarsData } from '../mock-data/mock-data'
 import PreviewCardComponent from '../components/preview-card-component'
+
+import { motion } from 'framer-motion'
 
 const PreviewCardContainer = () => {
     return (
@@ -8,15 +12,23 @@ const PreviewCardContainer = () => {
 
             {CarsData && CarsData?.map((car, index) =>
             (
-                <PreviewCardComponent
-                    className={`${index === 0 && 'rounded-tl-lg lg:rounded-bl-lg rounded-tr-lg lg:rounded-tr-none'} ${index === 2 && 'lg:rounded-tr-lg rounded-br-lg rounded-bl-lg lg:rounded-bl-none'}`}
-                    key={car.id}
-                    title={car.title}
-                    description={car.description}
-                    icon={car.icon}
-                    bgColor={car.bgColor}
-                    textColor={car.textColor}
-                />
+                <motion.div
+                    key={index}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1, delay: index * 0.5 }}
+                >
+
+                    <PreviewCardComponent
+                        className={`${index === 0 && 'rounded-tl-lg lg:rounded-bl-lg rounded-tr-lg lg:rounded-tr-none'} ${index === 2 && 'lg:rounded-tr-lg rounded-br-lg rounded-bl-lg lg:rounded-bl-none'}`}
+                        title={car.title}
+                        description={car.description}
+                        icon={car.icon}
+                        bgColor={car.bgColor}
+                        textColor={car.textColor}
+                    />
+                </motion.div>
+
             )
 
             )}
