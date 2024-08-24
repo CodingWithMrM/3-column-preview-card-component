@@ -9,20 +9,20 @@ export const CarsData = [
         title: 'Sedans',
         description: 'Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.',
         icon: sedanIcon,
-        bgColor: 'bg-[#E28625]'
+        bgColor: 'E28625'
     },
     {
         id: 2,
         title: 'SUVs',
         description: 'Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.',
         icon: suvIcon,
-        bgColor: 'bg-[#006971]'
+        bgColor: '006971'
     },
     {
         id: 3,
         title: 'Luxury',
         description: 'Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style. ',
         icon: luxuryIcon,
-        bgColor: 'bg-[#004140]'
+        bgColor: '004140'
     },
 ]
