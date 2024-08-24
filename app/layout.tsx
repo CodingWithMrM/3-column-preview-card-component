@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
 import { Lexend_Deca } from "next/font/google";
-import { Big_Shoulders_Display } from "next/font/google";
 import "./globals.css";
 
 const LexendDeca = Lexend_Deca({ subsets: ["latin"] });
-export const BigShouldersDisplayFont = Big_Shoulders_Display({ subsets: ["latin"] });
 
 
 export const metadata: Metadata = {

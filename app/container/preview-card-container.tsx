@@ -15,6 +15,7 @@ const PreviewCardContainer = () => {
                     description={car.description}
                     icon={car.icon}
                     bgColor={car.bgColor}
+                    textColor={car.textColor}
                 />
             )
 
