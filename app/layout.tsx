@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Lexend_Deca } from "next/font/google";
+import { Big_Shoulders_Display } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const LexendDeca = Lexend_Deca({ subsets: ["latin"] });
+export const BigShouldersDisplayFont = Big_Shoulders_Display({ subsets: ["latin"] });
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={LexendDeca.className}>{children}</body>
     </html>
   );
 }
