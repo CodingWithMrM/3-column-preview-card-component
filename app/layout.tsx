@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Lexend_Deca } from "next/font/google";
 import "./globals.css";
-
+import { Analytics } from "@vercel/analytics/react"
 const LexendDeca = Lexend_Deca({ subsets: ["latin"] });
 
 
@@ -17,7 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={LexendDeca.className}>{children}</body>
+      <body className={LexendDeca.className}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
