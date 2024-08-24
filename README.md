@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 3 Columns Preview Card Component
 
-## Getting Started
 
-First, run the development server:
+## Table of contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
+
+
+## Overview
+
+### The challenge
+THe challenge to build  a 3 columns preview card component
+
+Users should be able to:
+
+- View the optimal layout for the component depending on their device's screen size
+- See a hover state on desktop 
+
+
+### Screenshot
+
+![Design preview for the Single price grid component coding challenge](./screenshot.png)
+
+
+
+
+
+### Links
+
+- Solution URL: [GitHub](https://github.com/CodingWithMrM/3-column-preview-card-component)
+- Live Site URL: [Vercel](https://3-column-preview-card-component-two-gold.vercel.app/)
+
+## My process
+
+I made the components as dynamic so I no need to worry about large data scale and easy to render all the cards easily
+and I added the animation for the smoother animation
+### Built with
+
+- Semantic HTML5 markup
+- Tailwind
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+- [Framer Motion](https://www.framer.com/motion/) - Animation Library
+
+
+
+
+`install dependencies`
+```css
+pnpm i
+```
+`run project`
+
+```js
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Author
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Website - [GitHub](https://github.com/CodingWithMrM/)
+- YouTube - [@CodingWithMr.M](https://www.youtube.com/@CodingWithMrM)
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
